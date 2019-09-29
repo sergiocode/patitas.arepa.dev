@@ -7,7 +7,7 @@ const PetItem = props => {
 
     return (
         <div className="Pets">
-            <div 
+            <div
                 className="Pets-cover"
                 style={{
                     background: `url('${props.pet.photo}')`
@@ -19,10 +19,10 @@ const PetItem = props => {
                 </span>
                 {props.pet.adopt &&
                     <div className="Pets-type">
-                        Adopcion
+                        {props.pet.adopt === 'adopt'&& false}
+                        {props.pet.adopt === 'adopt' && true}
                     </div>
                 }
-                
             </div>
             <div className="Pets-content">
                 <div className="Pets-head">
